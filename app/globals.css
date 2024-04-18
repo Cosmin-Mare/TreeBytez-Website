@@ -1,6 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap");
+
+@font-face {
+  font-family: "Blanka";
+  src: url("/Blanka Font/Blanka-Regular.otf");
+}
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -30,4 +36,30 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+.bg {
+  background-position: center;
+  background-image: url("/bg.svg");
+  background-size: cover !important;
+}
+
+h1 {
+  font-family: "Blanka";
+  font-size: 2.5rem;
+  color: #384a41;
+}
+
+p {
+  font-family: "Patrick Hand", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.4rem;
+}
+
+.text-div {
+  font-family: "Patrick Hand", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.4rem;
 }
